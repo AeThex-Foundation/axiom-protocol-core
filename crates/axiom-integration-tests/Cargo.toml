@@ -1,0 +1,23 @@
+[package]
+name        = "axiom-integration-tests"
+description = "Integration tests for the Axiom Protocol"
+version.workspace    = true
+edition.workspace    = true
+authors.workspace    = true
+license.workspace    = true
+repository.workspace = true
+publish = false
+
+[dev-dependencies]
+axiom-core      = { workspace = true }
+axiom-crypto    = { workspace = true }
+axiom-consensus = { workspace = true }
+axiom-state     = { workspace = true }
+
+[[test]]
+name = "consensus_roundtrip"
+path = "src/consensus_roundtrip.rs"
+
+[[test]]
+name = "state_roundtrip"
+path = "src/state_roundtrip.rs"

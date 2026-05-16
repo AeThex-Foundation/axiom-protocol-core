@@ -1,0 +1,23 @@
+[package]
+name        = "axiom-crypto"
+description = "Cryptographic primitives for the Axiom Protocol"
+version.workspace    = true
+edition.workspace    = true
+authors.workspace    = true
+license.workspace    = true
+repository.workspace = true
+
+[dependencies]
+sha2          = { workspace = true }
+sha3          = { workspace = true }
+blake3        = { workspace = true }
+ed25519-dalek = { workspace = true }
+rand          = { workspace = true }
+rand_core     = { workspace = true }
+hex           = { workspace = true }
+zeroize       = { workspace = true }
+serde         = { workspace = true }
+thiserror     = { workspace = true }
+
+[dev-dependencies]
+rand = { workspace = true }

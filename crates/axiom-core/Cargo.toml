@@ -1,0 +1,23 @@
+[package]
+name        = "axiom-core"
+description = "Core types, traits, and error definitions for the Axiom Protocol"
+version.workspace    = true
+edition.workspace    = true
+authors.workspace    = true
+license.workspace    = true
+repository.workspace = true
+
+[dependencies]
+serde        = { workspace = true }
+serde_json   = { workspace = true }
+bincode      = { workspace = true }
+thiserror    = { workspace = true }
+hex          = { workspace = true }
+bs58         = { workspace = true }
+blake3       = { workspace = true }
+parking_lot  = { workspace = true }
+tracing      = { workspace = true }
+axiom-crypto = { workspace = true }
+
+[dev-dependencies]
+serde_json = { workspace = true }
