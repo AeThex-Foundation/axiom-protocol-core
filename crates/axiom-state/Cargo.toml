@@ -1,0 +1,20 @@
+[package]
+name        = "aethex-state"
+description = "Merkle state trie and ledger for the Axiom Protocol"
+version.workspace    = true
+edition.workspace    = true
+authors.workspace    = true
+license.workspace    = true
+repository.workspace = true
+
+[dependencies]
+serde        = { workspace = true }
+bincode      = { workspace = true }
+thiserror    = { workspace = true }
+tracing      = { workspace = true }
+parking_lot  = { workspace = true }
+axiom-core   = { workspace = true }
+axiom-crypto = { workspace = true }
+
+[dev-dependencies]
+rand = { workspace = true }
