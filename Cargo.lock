@@ -3,7 +3,7 @@
 version = 4
 
 [[package]]
-name = "aethex-axiom-sdk"
+name = "aethex-sdk"
 version = "0.1.0"
 dependencies = [
  "axiom-consensus",
