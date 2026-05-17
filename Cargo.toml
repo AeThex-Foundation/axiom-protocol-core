@@ -52,7 +52,7 @@ tracing-subscriber = { version = "0.3", features = ["env-filter"] }
 parking_lot       = "0.12"
 
 # Internal crates
-axiom-core      = { version = "0.1.0", path = "crates/axiom-core" }
+axiom-core = { package = "axiom-protocol-core", version = "0.1.0", path = "crates/axiom-core" }
 axiom-crypto    = { version = "0.1.0", path = "crates/axiom-crypto" }
 axiom-consensus = { version = "0.1.0", path = "crates/axiom-consensus" }
 axiom-state     = { version = "0.1.0", path = "crates/axiom-state" }
