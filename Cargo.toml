@@ -52,11 +52,11 @@ tracing-subscriber = { version = "0.3", features = ["env-filter"] }
 parking_lot       = "0.12"
 
 # Internal crates
-axiom-core      = { path = "crates/axiom-core" }
-axiom-crypto    = { path = "crates/axiom-crypto" }
-axiom-consensus = { path = "crates/axiom-consensus" }
-axiom-state     = { path = "crates/axiom-state" }
-axiom-network   = { path = "crates/axiom-network" }
+axiom-core      = { version = "0.1.0", path = "crates/axiom-core" }
+axiom-crypto    = { version = "0.1.0", path = "crates/axiom-crypto" }
+axiom-consensus = { version = "0.1.0", path = "crates/axiom-consensus" }
+axiom-state     = { version = "0.1.0", path = "crates/axiom-state" }
+axiom-network   = { version = "0.1.0", path = "crates/axiom-network" }
 
 [profile.release]
 opt-level     = 3
