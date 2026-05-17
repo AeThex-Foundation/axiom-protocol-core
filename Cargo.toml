@@ -14,7 +14,10 @@ version    = "0.1.0"
 edition    = "2021"
 authors    = ["AeThex Foundation <core@aethex.foundation>"]
 license    = "Apache-2.0"
-repository = "https://github.com/aethex-foundation/axiom-protocol-core"
+repository = "https://git.aethex.tech/AeThex-Foundation/axiom-protocol-core"
+homepage   = "https://aethex.tech"
+keywords   = ["blockchain", "consensus", "protocol", "cryptography", "bft"]
+categories = ["cryptography", "network-programming"]
 rust-version = "1.75"
 
 [workspace.dependencies]
