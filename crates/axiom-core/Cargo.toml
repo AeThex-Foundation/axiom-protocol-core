@@ -1,5 +1,5 @@
 [package]
-name        = "axiom-protocol-core"
+name        = "aethex-core"
 description = "Core types, traits, and error definitions for the Axiom Protocol"
 version.workspace    = true
 edition.workspace    = true

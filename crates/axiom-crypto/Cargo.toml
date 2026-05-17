@@ -1,5 +1,5 @@
 [package]
-name        = "axiom-crypto"
+name        = "aethex-crypto"
 description = "Cryptographic primitives for the Axiom Protocol"
 version.workspace    = true
 edition.workspace    = true

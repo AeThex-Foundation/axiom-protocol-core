@@ -7,13 +7,13 @@
 //!
 //! ```toml
 //! [dependencies]
-//! axiom-sdk = "0.1"
+//! aethex-sdk = "0.1"
 //! ```
 //!
 //! ## Quick start
 //!
 //! ```rust
-//! use axiom_sdk::prelude::*;
+//! use aethex_sdk::prelude::*;
 //!
 //! // Generate a keypair
 //! let keypair = Keypair::generate();
@@ -46,7 +46,7 @@ pub use axiom_network as network;
 /// Convenient single-import prelude.
 ///
 /// ```rust
-/// use axiom_sdk::prelude::*;
+/// use aethex_sdk::prelude::*;
 /// ```
 pub mod prelude {
     // Crypto

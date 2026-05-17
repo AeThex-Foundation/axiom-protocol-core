@@ -3,15 +3,99 @@
 version = 4
 
 [[package]]
+name = "aethex-consensus"
+version = "0.1.0"
+dependencies = [
+ "aethex-core",
+ "aethex-crypto",
+ "async-trait",
+ "bincode",
+ "futures",
+ "parking_lot",
+ "rand",
+ "serde",
+ "serde_json",
+ "thiserror",
+ "tokio",
+ "tracing",
+]
+
+[[package]]
+name = "aethex-core"
+version = "0.1.0"
+dependencies = [
+ "aethex-crypto",
+ "bincode",
+ "blake3",
+ "bs58",
+ "hex",
+ "parking_lot",
+ "serde",
+ "serde_json",
+ "thiserror",
+ "tracing",
+]
+
+[[package]]
+name = "aethex-crypto"
+version = "0.1.0"
+dependencies = [
+ "blake3",
+ "ed25519-dalek",
+ "hex",
+ "rand",
+ "rand_core",
+ "serde",
+ "sha2",
+ "sha3",
+ "thiserror",
+ "zeroize",
+]
+
+[[package]]
+name = "aethex-network"
+version = "0.1.0"
+dependencies = [
+ "aethex-consensus",
+ "aethex-core",
+ "aethex-crypto",
+ "async-trait",
+ "bincode",
+ "bytes",
+ "futures",
+ "hex",
+ "serde",
+ "serde_json",
+ "thiserror",
+ "tokio",
+ "tokio-util",
+ "tracing",
+]
+
+[[package]]
 name = "aethex-sdk"
 version = "0.1.0"
 dependencies = [
- "axiom-consensus",
- "axiom-crypto",
- "axiom-network",
- "axiom-protocol-core",
- "axiom-state",
+ "aethex-consensus",
+ "aethex-core",
+ "aethex-crypto",
+ "aethex-network",
+ "aethex-state",
  "serde",
+ "tracing",
+]
+
+[[package]]
+name = "aethex-state"
+version = "0.1.0"
+dependencies = [
+ "aethex-core",
+ "aethex-crypto",
+ "bincode",
+ "parking_lot",
+ "rand",
+ "serde",
+ "thiserror",
  "tracing",
 ]
 
@@ -39,97 +123,13 @@ dependencies = [
 ]
 
 [[package]]
-name = "axiom-consensus"
-version = "0.1.0"
-dependencies = [
- "async-trait",
- "axiom-crypto",
- "axiom-protocol-core",
- "bincode",
- "futures",
- "parking_lot",
- "rand",
- "serde",
- "serde_json",
- "thiserror",
- "tokio",
- "tracing",
-]
-
-[[package]]
-name = "axiom-crypto"
-version = "0.1.0"
-dependencies = [
- "blake3",
- "ed25519-dalek",
- "hex",
- "rand",
- "rand_core",
- "serde",
- "sha2",
- "sha3",
- "thiserror",
- "zeroize",
-]
-
-[[package]]
 name = "axiom-integration-tests"
 version = "0.1.0"
 dependencies = [
- "axiom-consensus",
- "axiom-crypto",
- "axiom-protocol-core",
- "axiom-state",
-]
-
-[[package]]
-name = "axiom-network"
-version = "0.1.0"
-dependencies = [
- "async-trait",
- "axiom-consensus",
- "axiom-crypto",
- "axiom-protocol-core",
- "bincode",
- "bytes",
- "futures",
- "hex",
- "serde",
- "serde_json",
- "thiserror",
- "tokio",
- "tokio-util",
- "tracing",
-]
-
-[[package]]
-name = "axiom-protocol-core"
-version = "0.1.0"
-dependencies = [
- "axiom-crypto",
- "bincode",
- "blake3",
- "bs58",
- "hex",
- "parking_lot",
- "serde",
- "serde_json",
- "thiserror",
- "tracing",
-]
-
-[[package]]
-name = "axiom-state"
-version = "0.1.0"
-dependencies = [
- "axiom-crypto",
- "axiom-protocol-core",
- "bincode",
- "parking_lot",
- "rand",
- "serde",
- "thiserror",
- "tracing",
+ "aethex-consensus",
+ "aethex-core",
+ "aethex-crypto",
+ "aethex-state",
 ]
 
 [[package]]

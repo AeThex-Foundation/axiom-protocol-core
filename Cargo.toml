@@ -53,11 +53,11 @@ tracing-subscriber = { version = "0.3", features = ["env-filter"] }
 parking_lot       = "0.12"
 
 # Internal crates
-axiom-core = { package = "axiom-protocol-core", version = "0.1.0", path = "crates/axiom-core" }
-axiom-crypto    = { version = "0.1.0", path = "crates/axiom-crypto" }
-axiom-consensus = { version = "0.1.0", path = "crates/axiom-consensus" }
-axiom-state     = { version = "0.1.0", path = "crates/axiom-state" }
-axiom-network   = { version = "0.1.0", path = "crates/axiom-network" }
+axiom-core = { package = "aethex-core", version = "0.1.0", path = "crates/axiom-core" }
+axiom-crypto    = { package = "aethex-crypto", version = "0.1.0", path = "crates/axiom-crypto" }
+axiom-consensus = { package = "aethex-consensus", version = "0.1.0", path = "crates/axiom-consensus" }
+axiom-state     = { package = "aethex-state", version = "0.1.0", path = "crates/axiom-state" }
+axiom-network   = { package = "aethex-network", version = "0.1.0", path = "crates/axiom-network" }
 axiom-sdk       = { version = "0.1.0", path = "crates/axiom-sdk" }
 
 [profile.release]

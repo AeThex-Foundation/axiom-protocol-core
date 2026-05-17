@@ -1,5 +1,5 @@
 [package]
-name        = "axiom-network"
+name        = "aethex-network"
 description = "P2P networking layer for the Axiom Protocol"
 version.workspace    = true
 edition.workspace    = true

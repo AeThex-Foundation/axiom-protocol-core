@@ -1,5 +1,5 @@
 [package]
-name        = "axiom-state"
+name        = "aethex-state"
 description = "Merkle state trie and ledger for the Axiom Protocol"
 version.workspace    = true
 edition.workspace    = true

@@ -1,5 +1,5 @@
 [package]
-name        = "axiom-consensus"
+name        = "aethex-consensus"
 description = "BFT consensus engine for the Axiom Protocol"
 version.workspace    = true
 edition.workspace    = true
