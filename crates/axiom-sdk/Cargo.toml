@@ -1,6 +1,6 @@
 [package]
-name        = "axiom-sdk"
-description = "Official Rust SDK for the Axiom Protocol — batteries-included entry point"
+name        = "aethex-axiom-sdk"
+description = "Official Rust SDK for the Axiom Protocol by AeThex Foundation — batteries-included entry point"
 version.workspace    = true
 edition.workspace    = true
 authors.workspace    = true
