@@ -5,6 +5,7 @@ members = [
     "crates/axiom-consensus",
     "crates/axiom-state",
     "crates/axiom-network",
+    "crates/axiom-sdk",
     "crates/axiom-integration-tests",
 ]
 resolver = "2"
@@ -57,6 +58,7 @@ axiom-crypto    = { version = "0.1.0", path = "crates/axiom-crypto" }
 axiom-consensus = { version = "0.1.0", path = "crates/axiom-consensus" }
 axiom-state     = { version = "0.1.0", path = "crates/axiom-state" }
 axiom-network   = { version = "0.1.0", path = "crates/axiom-network" }
+axiom-sdk       = { version = "0.1.0", path = "crates/axiom-sdk" }
 
 [profile.release]
 opt-level     = 3

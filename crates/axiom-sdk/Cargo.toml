@@ -1,0 +1,23 @@
+[package]
+name        = "axiom-sdk"
+description = "Official Rust SDK for the Axiom Protocol — batteries-included entry point"
+version.workspace    = true
+edition.workspace    = true
+authors.workspace    = true
+license.workspace    = true
+repository.workspace = true
+homepage.workspace   = true
+keywords.workspace   = true
+categories.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+axiom-core      = { workspace = true }
+axiom-crypto    = { workspace = true }
+axiom-consensus = { workspace = true }
+axiom-state     = { workspace = true }
+axiom-network   = { workspace = true }
+
+# Re-export serde so SDK users don't need to add it separately
+serde    = { workspace = true }
+tracing  = { workspace = true }

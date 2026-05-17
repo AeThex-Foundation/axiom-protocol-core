@@ -106,6 +106,19 @@ dependencies = [
 ]
 
 [[package]]
+name = "axiom-sdk"
+version = "0.1.0"
+dependencies = [
+ "axiom-consensus",
+ "axiom-crypto",
+ "axiom-network",
+ "axiom-protocol-core",
+ "axiom-state",
+ "serde",
+ "tracing",
+]
+
+[[package]]
 name = "axiom-state"
 version = "0.1.0"
 dependencies = [
